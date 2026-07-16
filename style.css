@@ -30,6 +30,22 @@ body {
   border: 2px solid black;
   position: relative;
 }
+
+.background-image-credit p {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  color: white;
+  font-size: 10px;
+  left: 35%;
+}
+
+.background-image-credit a {
+  color: white;
+}
+
 .logo-and-heading {
   position: absolute;
   display: flex;

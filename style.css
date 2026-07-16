@@ -63,7 +63,7 @@ body {
 
 .text {
   height: 35vh;
-  background-color: rgba(255, 255, 255, 0.968);
+  background-color: rgb(251, 251, 251);
   padding-left: 30px;
   padding-bottom: 20px;
   font-size: 20px;
@@ -92,11 +92,26 @@ body {
 .email-and-phone-number-form-control,
 .password-and-confirm-password-form-control {
   display: flex;
+  gap: 110px;
+}
+
+.first-and-last-name-form-control label,
+.email-and-phone-number-form-control label,
+.password-and-confirm-password-form-control label {
+  font-size: 12px;
+  color: rgb(59, 57, 57);
+  font-weight: 600;
 }
 
 .actual-form-section {
-  background-color: bisque;
+  background-color: white;
   height: 35vh;
+  padding-left: 30px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 0 7px 1px black;
 }
 
 .create-account-and-login-section {
@@ -113,9 +128,30 @@ body {
   border-radius: 5px;
   border: none;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
-.create-account-and-login-section span {
+.create-account-and-login-section a {
   color: #596d48;
   font-weight: bold;
+  cursor: pointer;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+}
+
+input:focus {
+  outline: 0;
+  border: 2px solid rgb(114, 114, 230);
+  box-shadow: 1px 1px 8px -4px black;
+}
+
+input[type="password"]:user-invalid {
+  outline: 0;
+  border: 2px solid red;
+}
+
+.password-requirement-message p {
+  font-size: 11px;
 }

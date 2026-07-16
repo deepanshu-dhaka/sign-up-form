@@ -62,11 +62,22 @@
 }
 
 .first-name-input-field,
-.last-name-input-field {
+.last-name-input-field,
+.email-input-field,
+.phone-number-input-field,
+.password-input-field,
+.confirm-password-input-field {
   display: flex;
   flex-direction: column;
 }
 
-.first-and-last-name-form-control {
+.first-and-last-name-form-control,
+.email-and-phone-number-form-control,
+.password-and-confirm-password-form-control {
   display: flex;
+}
+
+.actual-form-section {
+  background-color: bisque;
+  height: 30vh;
 }

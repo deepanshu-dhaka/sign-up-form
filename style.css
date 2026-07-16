@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Norse";
   src:
-    url("Norse-Bold.woff2") format("woff2"),
-    url("Norse-Bold.woff") format("woff");
+    url("font/Norse-Bold.woff2") format("woff2"),
+    url("font/Norse-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -44,6 +44,7 @@
 
 .logo-and-heading p {
   font-family: "Norse";
+  font-size: 80px;
 }
 
 .background-image-and-logo-section > img {
@@ -53,4 +54,19 @@
 
 .form-section {
   width: 70vw;
+}
+
+.text {
+  height: 40vh;
+  background-color: aqua;
+}
+
+.first-name-input-field,
+.last-name-input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-and-last-name-form-control {
+  display: flex;
 }
